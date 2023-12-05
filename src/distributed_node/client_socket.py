@@ -38,7 +38,7 @@ class SocketDynamoClient:
                 if(self.message.flag == False):
                     file_path=path+self.message.bucket_key+'/'+self.message.file_name
                 else:
-                    file_path = "~/object_store/buckets/hinted/"+self.message.file_name
+                    file_path = "../store/buckets/hinted/"+self.message.file_name
 
 
                 f = open(file_path,'rb')
